@@ -1,0 +1,85 @@
+.enter-results-container {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .enter-results-container h1, 
+  .enter-results-container h2 {
+    text-align: center;
+  }
+  
+  .table-container {
+    width: 100%;
+    overflow-x: auto;
+  }
+  
+  #studentTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    table-layout: fixed;
+  }
+  
+  #studentTable th, 
+  #studentTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    word-wrap: break-word;
+  }
+  
+  #studentTable th {
+    background-color: #f2f2f2;
+  }
+  
+  #studentTable input[type="number"] {
+    width: 90%;
+    padding: 5px;
+    box-sizing: border-box;
+  }
+  
+  #studentTable input[readonly] {
+    background-color: #f0f0f0;
+    border: none;
+  }
+  
+  .enter-results-container button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .enter-results-container button:hover {
+    background-color: #45a049;
+  }
+  
+  .btn-home {
+    background-color: #008CBA;
+    margin-left: 10px;
+  }
+  
+  .btn-home:hover {
+    background-color: #0073a8;
+  }
+  
+  .popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+  }
+  
+  .text-center {
+    text-align: center;
+  }

@@ -1,0 +1,53 @@
+.marks-entry-container {
+    background: url('https://img.freepik.com/free-vector/graduation-hats-frame_53876-91596.jpg?t=st=1739714439~exp=1739718039~hmac=04be4b14fa1cd60ee4e4c632300eba12b128a54b0e2a039d163f76b1a690a6ca&w=740') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+  }
+  
+  .year-buttons .btn {
+    margin: 5px;
+    width: 150px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .year-buttons .btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  #subjectsContainer {
+    margin-top: 20px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  .subject-checkbox {
+    margin: 10px 0;
+    transition: transform 0.3s ease;
+  }
+  
+  .subject-checkbox:hover {
+    transform: scale(1.05);
+  }
+  
+  .card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: rgba(255, 255, 255, 0.9);
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .btn-success, .btn-home {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .btn-success:hover, .btn-home:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(25, 135, 84, 0.3);
+  }

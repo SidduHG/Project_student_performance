@@ -1,0 +1,145 @@
+/* Base Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #3ae6c7, #9face6);
+  }
+  
+  /* Flexbox Centering */
+  .center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Form Container */
+  .form-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+    animation: fadeIn 0.8s ease-in-out;
+  }
+  
+  /* Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    } 
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Headings */
+  h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #090303;
+  }
+  
+  /* Form Styling */
+  .signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  
+  /* Labels & Inputs */
+  .form-label {
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: #101010;
+  }
+  
+  .form-control {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    transition: border 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .form-control:focus {
+    border-color: #6c63ff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(108, 99, 255, 0.3);
+  }
+  
+  /* Role Radio Selection */
+  .role-selection {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .form-check {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  
+  .form-check input[type="radio"] {
+    transform: scale(1.2);
+    accent-color: #6c63ff;
+  }
+  
+  .form-check-label {
+    font-weight: 500;
+    color: #555;
+  }
+  
+  /* Submit Button */
+  .btn-submit {
+    padding: 12px;
+    background: linear-gradient(to right, #09081c, #090321);
+    border: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.3s ease;
+  }
+  
+  .btn-submit:hover {
+    transform: translateY(-2px);
+    background: linear-gradient(to right, #babaca, #060412);
+  }
+  
+  /* Media Queries */
+  @media screen and (max-width: 600px) {
+    .form-container {
+      padding: 20px;
+      border-radius: 12px;
+    }
+  
+    .form-label,
+    .form-check-label {
+      font-size: 0.95rem;
+    }
+  
+    .form-control {
+      font-size: 0.95rem;
+      padding: 10px;
+    }
+  
+    .btn-submit {
+      font-size: 0.95rem;
+      padding: 10px;
+    }
+  }
+  

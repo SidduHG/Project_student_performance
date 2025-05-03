@@ -1,0 +1,111 @@
+
+    .teacher-dashboard {
+      background-attachment: fixed;
+    }
+    
+    .custom-navbar {
+      background-image: url('https://img.freepik.com/free-vector/graduation-hats-frame_53876-91596.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 100px;
+    }
+
+    .navbar-brand img {
+      height: 50px;
+      width: auto;
+      padding: 0;
+    }
+
+    .custom-navbar .nav-link,
+    .custom-navbar .navbar-brand {
+      color: black !important;
+    }
+
+    .custom-navbar .nav-link:hover {
+      color: darkgray !important;
+    }
+    
+    .dashboard {
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 10px;
+      margin: 70px auto;
+      max-width: 1200px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .dashboard h1 {
+      color: #333;
+      font-weight: bold;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .card {
+      margin-bottom: 20px;
+      border: none;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card-title {
+      font-size: 1.25rem;
+      font-weight: bold;
+    }
+
+    .card-text {
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    .btn-primary {
+      background-color: #007bff;
+      border-color: #007bff;
+    }
+
+    .btn-primary:hover {
+      background-color: #0056b3;
+      border-color: #0056b3;
+    }
+    
+    @media (max-width: 992px) {
+      .navbar-brand img {
+        height: 40px;
+      }
+      .dashboard {
+        max-width: 90%;
+      }
+      .dashboard h1 {
+        font-size: 1.8rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .dashboard {
+        padding: 15px;
+      }
+      .dashboard h1 {
+        font-size: 1.5rem;
+      }
+      .card {
+        text-align: center;
+      }
+      .btn-primary {
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .dashboard {
+        margin: 10px;
+        padding: 10px;
+      }
+      .dashboard h1 {
+        font-size: 1.2rem;
+      }
+    }
